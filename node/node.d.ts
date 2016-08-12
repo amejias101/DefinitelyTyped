@@ -267,8 +267,8 @@ declare namespace NodeJS {
     }
 
     export interface WritableStream extends EventEmitter {
-        rows: number;
-        columns: number;
+        rows?: number;
+        columns?: number;
         writable: boolean;
         write(buffer: Buffer | string, cb?: Function): boolean;
         write(str: string, encoding?: string, cb?: Function): boolean;
